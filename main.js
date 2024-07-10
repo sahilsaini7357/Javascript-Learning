@@ -87,95 +87,146 @@
 // greet();
 // greet("sahil");
 
-let person = {
-    name: "sahil",
-    age: 22
+// let person = {
+//     name: "sahil",
+//     age: 22
 
-}
-//propati ko change karna
-person.age = 23;
-console.log(person);
+// }
+// //propati ko change karna
+// person.age = 23;
+// console.log(person);
 
-let numbers = [1, 2, 3, 4];
+// let numbers = [1, 2, 3, 4];
 
-//array ko change karna 
-numbers.push(5)
-console.log(numbers);
-
-
-
-function applyOperation(a, b, operation) {
-    return operation(a, b);
-}
-
-const add = (x, y) => x + y;
-const multiply = (x, y) => x * y;
-
-console.log(applyOperation(3, 4, add)); // 7
-console.log(applyOperation(3, 4, multiply)); // 12            
+// //array ko change karna 
+// numbers.push(5)
+// console.log(numbers);
 
 
-function divide(a, b) {
-    if (b === 0) {
-        throw new Error('Division by zero is not allowed.');
-    }
-    return a / b;
-}
 
-try {
-    console.log(divide(4, 2)); // 2
-    console.log(divide(4, 0)); // Error
-} catch (error) {
-    console.error(error.message); // Division by zero is not allowed.
-}
+// function applyOperation(a, b, operation) {
+//     return operation(a, b);
+// }
+
+// const add = (x, y) => x + y;
+// const multiply = (x, y) => x * y;
+
+// console.log(applyOperation(3, 4, add)); // 7
+// console.log(applyOperation(3, 4, multiply)); // 12            
+
+
+// function divide(a, b) {
+//     if (b === 0) {
+//         throw new Error('Division by zero is not allowed.');
+//     }
+//     return a / b;
+// }
+
+// try {
+//     console.log(divide(4, 2)); // 2
+//     console.log(divide(4, 0)); // Error
+// } catch (error) {
+//     console.error(error.message); // Division by zero is not allowed.
+// }
 
 
 // Arrow Function
-const plus = (a, b) => a + b;
+// const plus = (a, b) => a + b;
 
-console.log(plus(3, 9)); // 12
+// console.log(plus(3, 9)); // 12
 
 
 
-//1.Function Declaration:
+//Q 1.Function Declaration:
 
-function store(a, b) {
-    return a + b;
+// function store(a, b) {
+//     return a + b;
 
-}
-console.log(store(5, 5));
+// }
+// console.log(store(5, 5));
 
 // Function Expression
 
-const subtract = function (a , b){
-    return (a - b);
-}
-console.log(subtract(10 , 4));
+// const subtract = function (a , b){
+//     return (a - b);
+// }
+// console.log(subtract(10 , 4));
 
-//2. Arrow Function
+//Q 2. Arrow Function
 
-let arrow = (a , b) => (a * b);
-console.log (arrow(6 , 5));
+// let arrow = (a , b) => (a * b);
+// console.log (arrow(6 , 5));
 
-//3.Default Parameters
+//Q 3.Default Parameters
 
-function sahil(name = "Guest"){
-    return `Hello, ${name}`;
+// function sahil(name = "Guest"){
+//     return `Hello, ${name}`;
 
-}
-console.log(sahil());
-console.log("Rahul")
+// }
+// console.log(sahil());
+// console.log("Rahul")
 
-//Rest Parameters
+//Q 4. Rest Parameters
 
-function person(...numbers){
-    return numbers;
-}
-let details {
-    
-}
+// function home(...names) {
+//     return names;
+// }
 
-console.log(person)
+// function person(...numbers) {
+//     return numbers;
+// }
+
+// let namesArray = home("sahil", "sanju", "rahul", "ajay", "tushar");
+// let numbersArray = person(1, 2, 3, 4, 5)[3];
+
+// let details = {
+//     names: namesArray,
+//     numbers: numbersArray,
+
+// };
+
+// console.log(details);
+
+// let arryNumbers = [1, 2, , 3, 4, 5, 6]
+// function numbers([value1, value2]) {
+//     return [value1, value2]
+// }
+// console.log(numbers(arryNumbers));
+
+// function Destructuring({ name, surname }) {
+//     return `${name}, ${surname}`;
+// }
+
+// let data = {
+//     name: "Rahul",
+//     surname: "saini",
+//     age: 20,
+//     city: 'Jaipur'
+
+// }
+// console.log(Destructuring(data));
+
+// //Q 5. Pure Functions
+
+// function squre(x) {
+//     return x * x
+// }
+// console.log(squre(10));
+
+// //Q 6.Higher-Order Functions
+
+// function apply (a , b , c){
+//     return apply ( a , b);
+// }
+// let add = ( a , y) => a + y
+// let multiply = ( a , y) => a + y
+
+// console.log(apply(50 , 50 , add))
+// console.log(apply(50 , 50 , multiply))
+
+
+
+
 
 
 
@@ -204,4 +255,3 @@ console.log(person)
 
 // console.log(sum(1, 2, 3)); // 6
 // console.log(sum(4, 5, 6, 7)); // 22
-    
