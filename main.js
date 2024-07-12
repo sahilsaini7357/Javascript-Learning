@@ -216,21 +216,42 @@
 // //Q 6.Higher-Order Functions
 
 // function apply (a , b , c){
-//     return apply ( a , b);
+//     return c ( a , b);
 // }
-// let add = ( a , y) => a + y
-// let multiply = ( a , y) => a + y
+// let add = (a , y) => a + y
+// let multiply = (a , y) => a + y
 
-// console.log(apply(50 , 50 , add))
+// console.log(apply(50 , 10 , add))
 // console.log(apply(50 , 50 , multiply))
 
+// function rest (firstName , lastName , age, ...args){
+//     return `${firstName} ,${lastName} ,${age}`;
+// }
+// console.log(rest("sahil","saini",22,30,"sanju"));
 
 
+// function Destructuring({name1 , name2 , age}){
+//     return `${name1}, ${name2}, ${age}`;
+// }
+// let person = {
+//     name1 : "sanju",
+//     name2 : "sahil",
+//     age : 22,
+//     city : "jaipur",
+//     state : "rajasthan"
+// }
+
+// console.log(Destructuring(person));
+
+function onePlusAvg(x , y){
+    return 1 + (x + y) * 5
+}
+
+let x = 10;
+let y = 20; 
 
 
-
-
-
+console.log(onePlusAvg(10,20))
 
 
 
