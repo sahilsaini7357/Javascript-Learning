@@ -7,43 +7,48 @@
 //     const FIRST_NAME = "sahil";
 //     return FIRST_NAME;
 // };
+
 // console.log(myFirstName);
 // console.log(FIRST_NAME);
 
 
-// function getMyFullName(fristName = '' , lastName = '') {
-//     return fristName + lastName
-
+// function getMyFullName(firstName = 'a' , lastName = 'b') {
+//     return firstName + lastName
 // }
+// console.log(getMyFullName())
+
 //  let myMisstackFullName =  getMyFullName("Ajay");
 //  console.log(myMisstackFullName);
-
 
 
 // function addistion(intigerOne , intigerTwo){
 //       return intigerOne + intigerTwo
 // }
-// addistion(5+5);
-
-// function subtreakstion(intigerOne , intigerTwo){
-//       return intigerOne - intigerTwo
-// } 
-// subtreakstion(4+4);
+// console.log(addistion(5,5))
 
 
+// function subtreakstion(intigerOne, intigerTwo) {
+//     return intigerOne - intigerTwo
+
+// }
+// let result = subtreakstion(4, 2)
+
+// console.log(result)
 
 //what is muteble and unmuteble in javascript
-//in this patten can't peramiter 
-// i can't pass daimenic 
+//in this patten can't peramiter
+// i can't pass daimenic
 
 //Q1. javascript me hosting kya hota h
 //Ans. js me hosting ek fucter hota h jiski vahah se function declare var ko scope ke top pr le jata h
 // esme declare kiye huye ho kahi bhi use kar sakte h.
 
 //exmple :
-//console.log(myVar); // Output: undefined
-//var myVar = 10;
-//console.log(myVar); Output: 10
+
+// console.log(myVar); // Output: undefined
+// var myVar = 10;
+// var myVar = 10;
+// console.log(myVar); Output: 10
 
 
 // function sum() {
@@ -73,16 +78,16 @@
 //     return a + b + c;
 // }
 
-// console.log(add(12)); 
-// console.log(add(10)); 
-// console.log(add(13, 7 ,5)); 
+// console.log(add(12));
+// console.log(add(10));
+// console.log(add(13, 7 ,5));
 
 // function greet(name ){
 
 //     if(name === undefined){
 //         name = "rahul" ;
 //     }
-//     console.log("Hello , " + name)  
+//     console.log("Hello , " + name)
 // }
 // greet();
 // greet("sahil");
@@ -98,7 +103,7 @@
 
 // let numbers = [1, 2, 3, 4];
 
-// //array ko change karna 
+// //array ko change karna
 // numbers.push(5)
 // console.log(numbers);
 
@@ -112,7 +117,7 @@
 // const multiply = (x, y) => x * y;
 
 // console.log(applyOperation(3, 4, add)); // 7
-// console.log(applyOperation(3, 4, multiply)); // 12            
+// console.log(applyOperation(3, 4, multiply)); // 12
 
 
 // function divide(a, b) {
@@ -175,7 +180,6 @@
 // function person(...numbers) {
 //     return numbers;
 // }
-
 // let namesArray = home("sahil", "sanju", "rahul", "ajay", "tushar");
 // let numbersArray = person(1, 2, 3, 4, 5)[3];
 
@@ -243,22 +247,25 @@
 
 // console.log(Destructuring(person));
 
-function onePlusAvg(x , y){
-    return 1 + (x + y) * 5
-}
+// function onePlusAvg(x, y) {
+//     return 1 + (x + y) * 5
+// }
 
-let x = 10;
-let y = 20; 
-
-
-console.log(onePlusAvg(10,20))
+// let x = 10;
+// let y = 20;
 
 
+// console.log(onePlusAvg(10, 20))
 
 
 
+// const cars = ["od", "volvo", "scorpio", "safari"];
 
+// function myFunction([val1, val2]) {
+//     return val1 + "," + val2;
+// }
 
+// console.log(myFunction(cars))
 
 
 
